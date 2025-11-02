@@ -2,11 +2,7 @@
 
 @import "tailwindcss";
 
-@custom-variant dark {
-  &:where(.dark, .dark *) {
-    /* Define dark mode styles here */
-  }
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
 *{
   font-family: "Manrope", sans-serif;
